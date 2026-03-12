@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataInsight | Análise de Dados para Expansão de Negócios</title>
+  <meta name="description" content="Encontre novos clientes e oportunidades de expansão para sua empresa com análise inteligente de dados cadastrais de CNPJ e informações de municípios.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 3v18h18"/>
+          <path d="m19 9-5 5-4-4-3 3"/>
+        </svg>
+        <span>DataInsight</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <div class="nav-contact-info">
+          <a href="tel:+55(91)999816425" class="nav-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+55 (91) 99981-6425</span>
+          </a>
+          <a href="mailto:facs2000@gmail.com" class="nav-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>facs2000@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" x2="20" y1="12" y2="12"/>
+          <line x1="4" x2="20" y1="6" y2="6"/>
+          <line x1="4" x2="20" y1="18" y2="18"/>
+        </svg>
+        <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18"/>
+          <path d="m6 6 12 12"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">O poder dos dados a favor do seu crescimento</span>
+        <h1 class="hero-title">Encontre <span class="text-primary">NOVOS CLIENTES</span> e Expanda Seu <span class="text-primary">NEGÓCIO</span> com o Poder dos <span class="text-primary">DADOS</span></h1>
+        <p class="hero-description">Transformamos dados em inteligência estratégica que revelam oportunidades reais de crescimento para seu negócio.</p>
+        <div class="hero-buttons">
+          <a href="#contato" class="btn btn-primary">Solicitar Análise</a>
+          <a href="#servicos" class="btn btn-secondary">Conhecer Serviços</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">65M+</span>
+          <span class="stat-label">CNPJs Analisados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5.571</span>
+          <span class="stat-label">Municípios Mapeados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Dados Atualizados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Nossos Serviços</span>
+        <h2 class="section-title">Soluções em inteligência de mercado baseada em dados.</h2>
+        <p class="section-description">Oferecemos dois módulos principais para impulsionar o crescimento do seu negócio com dados precisos e atualizados.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1: Perfil de Clientes -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Perfil de Clientes</h3>
+              <p class="service-subtitle">Voltado a identificar novos clientes para sua empresa.</p>
+            </div>
+          </div>
+          <p class="service-description">Tenha uma visão completa das empresas em cada município ou região. Com esses dados, é possível identificar clientes potenciais com precisão. Imagine saber exatamente onde direcionar seu time comercial, seja por telemarketing ou representantes. Você descobre onde estão seus clientes e como falar com eles. Confira abaixo uma demonstração das informações. Importante: os dados apresentados são fictícios.</p>
+          <a href="https://1drv.ms/x/c/39cc6f176983deca/IQBeslPQPZnUTK9RbST8UyXdAfENmaiYnPVkiktjizNyFL4?e=5MRN1w" class="service-link" target="_blank">
+            <span>Acessar demonstração de clientes agora</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 2: Expansão de Mercado -->
+        <div class="service-card">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="service-title">Expansão de Mercado</h3>
+              <p class="service-subtitle">Identifique novas oportunidades de crescimento</p>
+            </div>
+          </div>
+          <p class="service-description">Antes de investir na abertura de uma nova filial, é fundamental entender o potencial real de cada região. Com os dados que fornecemos, sua empresa consegue avaliar o cenário do mercado com mais clareza e segurança. Assim, fica muito mais fácil e profissional identificar as melhores cidades para expandir e tomar decisões de crescimento baseadas em dados concretos. Acesse a demonstração no link abaixo. Dados fictícios para demonstração.</p>
+          <a href="http://www.google.com.br/" class="service-link"target="_blank">
+            <span>Acessar demonstração da expansão agora</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Detailed Insights -->
+      <div class="insights-section">
+        <!-- Perfil de Clientes Details -->
+        <div class="insights-block" id="perfil-clientes">
+          <div class="insights-header">
+            <div class="insights-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="insights-title">Perfil de Clientes</h3>
+              <p class="insights-subtitle">O que você vai identificar com nossa análise</p>
+            </div>
+          </div>
+
+          <div class="insights-grid">
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Empresas alvo precisas</h4>
+                <p class="insight-description">Empresas ativas que se encaixam exatamente no perfil (CNAE, porte, localização).</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" x2="12" y1="20" y2="10"/>
+                  <line x1="18" x2="18" y1="20" y2="4"/>
+                  <line x1="6" x2="6" y1="20" y2="14"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Priorização objetiva</h4>
+                <p class="insight-description">Saiba aonde vale mais a pena abordar primeiro com base em dados concretos.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                  <path d="M10 6h4"/>
+                  <path d="M10 10h4"/>
+                  <path d="M10 14h4"/>
+                  <path d="M10 18h4"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Dados cadastrais completos</h4>
+                <p class="insight-description">Data de abertura, tempo de mercado, porte e situação cadastral de cada empresa.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Avaliação de risco</h4>
+                <p class="insight-description">Identifique se é uma empresa consolidada ou recente (maior/menor risco de negócio).</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Mapeamento de concorrentes</h4>
+                <p class="insight-description">Visualize a quantidade de concorrentes na área de atuação desejada.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                  <path d="M2 12h20"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Dados demográficos</h4>
+                <p class="insight-description">Quantidade de habitante, projeção de receita, análise personalizada para sua empresa e muito mais.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="insights-footer">
+            <p>Esses são apenas alguns dos insights que nossa análise de perfil de clientes pode gerar. Também desenvolvemos análises personalizadas conforme a necessidades da sua empresa. Confira!</p>
+          </div>
+        </div>
+
+        <!-- Expansão de Mercado Details -->
+        <div class="insights-block" id="expansao-mercado">
+          <div class="insights-header">
+            <div class="insights-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="insights-title">Expansão de Mercado</h3>
+              <p class="insights-subtitle">O que você vai identificar para expandir seu negócio</p>
+            </div>
+          </div>
+
+          <div class="insights-grid">
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Ranking de cidades</h4>
+                <p class="insight-description">Cidades com maior potencial: receita estimada, empresas-alvo, renda média e população.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                  <path d="M10 6h4"/>
+                  <path d="M10 10h4"/>
+                  <path d="M10 14h4"/>
+                  <path d="M10 18h4"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Análise de segmento</h4>
+                <p class="insight-description">Quantidade de empresas do mesmo segmento (CNAE principal e secundário) por região.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" x2="12" y1="20" y2="10"/>
+                  <line x1="18" x2="18" y1="20" y2="4"/>
+                  <line x1="6" x2="6" y1="20" y2="14"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Comparativo regional</h4>
+                <p class="insight-description">Comparação entre cidades e regiões mostrando onde o mercado é maior ou menor.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Densidade de concorrentes</h4>
+                <p class="insight-description">Quantos concorrentes existem em cada cidade para avaliar saturação do mercado.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m15 9-6 6"/>
+                  <path d="m9 9 6 6"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Taxa de encerramento</h4>
+                <p class="insight-description">Número de empresas encerradas no setor em cada município nos últimos anos.</p>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" x2="12" y1="2" y2="22"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="insight-title">Indicadores econômicos</h4>
+                <p class="insight-description">Renda média do município e população como indicadores do mercado consumidor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="insights-footer">
+            <p>Os tópicos acima são apenas o começo. Com nossa análise de expansão de mercado, sua empresa identifica cidades com maior potencial e oportunidades de estudos personalizados para guiar sua empresa. Confira!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas mais comuns sobre nossos serviços</h2>
+        <p class="section-description">Tire suas dúvidas sobre como funciona nossa análise de dados empresariais.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>De onde vêm os dados utilizados nas análises?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Utilizamos dados públicos oficiais da Receita Federal (cadastro de CNPJs) e do IBGE (informações demográficas e econômicas dos municípios), garantindo confiabilidade e atualização constante.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Com que frequência os dados são atualizados?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nossa base de dados é atualizada mensalmente com as informações mais recentes da Receita Federal. Os dados do IBGE são atualizados conforme novas pesquisas são divulgadas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quanto tempo leva para receber uma análise?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>O prazo varia conforme a complexidade da análise solicitada. Análises simples podem ser entregues em 24-48 horas, enquanto estudos mais abrangentes podem levar até 5 dias úteis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Posso personalizar os critérios da análise?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Todas as análises são personalizadas de acordo com suas necessidades. Você pode definir critérios como CNAE, porte, localização, tempo de mercado e muito mais.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Em qual formato recebo os dados?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Os dados são fornecidos em planilhas Excel ou CSV e podem ser facilmente compartilhados via Drive.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vocês atendem todo o Brasil?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Nossa base de dados cobre todos os 5.571 municípios brasileiros e mais de 65 milhões de CNPJs registrados em todo o território nacional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona a precificação?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>Os valores variam conforme o escopo da análise (quantidade de municípios, filtros específicos, profundidade dos dados). Entre em contato para um orçamento personalizado sem compromisso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Entre em Contato</span>
+        <h2 class="section-title">Vamos conversar sobre seu projeto</h2>
+        <p class="section-description">Entre em contato conosco para solicitar uma análise ou tirar suas dúvidas.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">Telefone</h3>
+          <a href="tel:+55 (91) 99981-6425" class="contact-link">(91) 99981-6425</a>
+          <p class="contact-info">Segunda a Sexta, 9h às 18h</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">E-mail</h3>
+          <a href="mailto:facs2000@gmail.com" class="contact-link">facs2000@gmail.com</a>
+          <p class="contact-info">Respondemos em até 24 horas</p>
+        </div>
+
+        <div class="contact-card contact-card-highlight">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3 class="contact-title">WhatsApp</h3>
+          <a href="https://wa.me/5591999816425?text=Olá! Gostaria de saber mais sobre os serviços de análise de dados." class="contact-link">(91)99981-6425</a>
+          <p class="contact-info">Atendimento rápido e direto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3v18h18"/>
+              <path d="m19 9-5 5-4-4-3 3"/>
+            </svg>
+            <span>DataInsight</span>
+          </a>
+          <p class="footer-description">Transformando dados em oportunidades de negócio. Análise inteligente para o crescimento da sua empresa.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title">Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-title">Serviços</h4>
+          <ul>
+            <li><a href="#perfil-clientes">Perfil de Clientes</a></li>
+            <li><a href="#expansao-mercado">Expansão de Mercado</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">Contato</h4>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+5591999816425">+55 (91) 99981-6425</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <a href="mailto:facs2000@gmail.com">facs2000@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DataInsight. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5591999816425?text=Olá! Gostaria de saber mais sobre os serviços de análise de dados." class="whatsapp-btn" aria-label="Entrar em contato pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
